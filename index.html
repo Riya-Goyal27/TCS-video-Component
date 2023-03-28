@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Website</title>
+</head>
+<body>
+    <div class="mycontainer">
+
+        <!-- video container -->
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="video.mp4">
+            </video>
+        </div>
+
+        <!-- heading -->
+        <div class="text-container">
+            <div class="mytext">
+            <p class="heading">WHO WE ARE</p>
+            <hr>
+            <p class="description">Building on belief</p>
+            </div>
+        </div>
+        
+        <!-- home container -->
+        <div class="home">
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">MyWebsite</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </div>
+                </div>
+            </nav>
+            
+            <!-- play pause button -->
+            <button class="mybtn">PAUSE</button>
+        </div>
+
+        <!-- story container -->
+        <section class="story-container">
+            <p class="story-heading">STORIES</p>
+            <div class="stories">
+                <div class="story">
+                    <img src="image1.jpg" alt="image1" class="storyimg story-active">
+                    <p class="story-caption">Image One</p>
+                </div>
+                <div class="story">
+                    <img src="image2.jpg" alt="image2" class="storyimg story-active">
+                    <p class="story-caption">Image Two</p>
+                </div>
+                <div class="story">
+                    <img src="image3.jpg" alt="image3" class="storyimg story-active">
+                    <p class="story-caption">Image Three</p>
+                </div>
+                <div class="story">
+                    <img src="image4.jpg" alt="image4" class="storyimg story-active">
+                    <p class="story-caption">Image Four</p>
+                </div>
+                <div class="story">
+                    <img src="image5.jpg" alt="image5" class="storyimg story-active">
+                    <p class="story-caption">Image Five</p>
+                </div>
+                <div class="story">
+                    <img src="image6.jpg" alt="image6" class="storyimg story-active">
+                    <p class="story-caption">Image Six</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal-container no-display">
+            <button class="closebtn" id="closebtn">Close</button>
+            <div class="mymodal">
+                <img src="img2.jpg" alt="image1" class="modalimg">
+                <p class="modal-caption">This is <span class="inner-caption">Image One</span></p>
+            </div>
+        </div>
+        
+        <!-- swiper -->
+        <div class="swiper mySwiper">
+            <p class="story-heading" style="margin:-10px; color: black;">Belief In Action</p>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="image1.jpg" alt="img1" class="swiper-img">
+                <div class="img-cover">Hello! This is my image one...</div>
+              </div>
+              <div class="swiper-slide">
+                <img src="image2.jpg" alt="img2" class="swiper-img">
+                <div class="img-cover">Hello! This is my image two...</div>
+              </div>
+              <div class="swiper-slide">
+                <img src="image3.jpg" alt="img3" class="swiper-img">
+                <div class="img-cover">Hello! This is my image three...</div>
+              </div>
+              <div class="swiper-slide">
+                <img src="image4.jpg" alt="img4" class="swiper-img">
+                <div class="img-cover">Hello! This is my image fourth...</div>
+              </div>
+              <div class="swiper-slide">
+                <img src="image5.jpg" alt="img5" class="swiper-img">
+                <div class="img-cover">Hello! This is my image five...</div>
+              </div>
+              <div class="swiper-slide">
+                <img src="image6.jpg" alt="img6" class="swiper-img">
+                <div class="img-cover">Hello! This is my image sixth...</div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        
+    </div>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Swiper JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script> 
+</body>
+</html>
